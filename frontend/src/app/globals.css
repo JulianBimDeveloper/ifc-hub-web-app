@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+/* ═══════════════════════════════════════════════════════════════════
+   FRACTAL IFC — Design System
+   Corporate AEC · Dark / Light / System themes
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Layout constants (theme-agnostic) ─────────────────────────── */
+:root {
+  --sidebar-w: 470px;
+  --navbar-h:  52px;
+  --toolbar-h: 62px;
+}
+
+/* ── Dark theme (default) ──────────────────────────────────────── */
+:root,
+html.dark {
+  --background:    #15171B;
+  --surface:       #1C1F24;
+  --surface-solid: #1C1F24;
+  --surface-2:     #22262C;
+  --surface-3:     #282D34;
+  --border:        #2C3038;
+  --border-bright: #3A3F49;
+
+  /* Primary / accent — one accent, no glow */
+  --cyan:    #5B8CFF;   /* primary accent (kept var name for call-site compatibility) */
+  --magenta: #4FA8C9;   /* secondary accent — muted teal, replaces neon violet */
+  --green:   #3FBE8A;
+  --yellow:  #D9A441;
+  --red:     #E2685C;
+  --dim:     #565C66;
+
+  /* Text */
+  --text:        #E7E9EC;
+  --text-muted:  #8B909A;
+  --text-bright: #FFFFFF;
+
+  /* Shadows — neutral, no color, no inset highlight */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.35);
+  --shadow-md: 0 2px 6px rgba(0,0,0,0.35);
+  --shadow-lg: 0 6px 16px rgba(0,0,0,0.40);
+
+  /* Kept for call sites still referencing .glass — now a plain solid surface */
+  --glass-bg:     var(--surface);
+  --glass-border: var(--border);
+  --glass-highlight: transparent;
+}
+
+/* ── Light theme ───────────────────────────────────────────────── */
+html.light {
+  --background:    #F6F7F9;
+  --surface:       #FFFFFF;
+  --surface-solid: #FFFFFF;
+  --surface-2:     #EEF0F3;
+  --surface-3:     #E4E7EC;
+  --border:        #DEE1E6;
+  --border-bright: #C7CBD3;
+
+  --cyan:    #1F4FBF;
+  --magenta: #0E7490;
+  --green:   #177A4E;
+  --yellow:  #93650F;
+  --red:     #AE2E24;
+  --dim:     #9AA0AA;
+
+  --text:        #1A1D22;
+  --text-muted:  #5B6270;
+  --text-bright: #0C0E11;
+
+  --shadow-sm: 0 1px 2px rgba(20,24,32,0.06);
+  --shadow-md: 0 2px 6px rgba(20,24,32,0.08);
+  --shadow-lg: 0 6px 16px rgba(20,24,32,0.10);
+
+  --glass-bg:        var(--surface);
+  --glass-border:    var(--border);
+  --glass-highlight: transparent;
+}
+
+/* ── Base reset ────────────────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-inter), var(--font-plex-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ── Headings — Inter, editorial weight and tracking ─────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-bright);
+}
+
+/* ── Scrollbars ────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border-bright);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--cyan); opacity: 0.7; }
+
+/* ── Surface mixin (was a blurred glass panel — now a plain solid panel) ─ */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Layout ────────────────────────────────────────────────────── */
+.toolbar-scroll::-webkit-scrollbar { display: none; }
+.toolbar-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+
+.layout-main {
+  margin-left: var(--sidebar-w);
+  margin-top: calc(var(--navbar-h) + var(--toolbar-h));
+  min-height: calc(100vh - var(--navbar-h) - var(--toolbar-h));
+  padding: 1.5rem;
+}
+
+/* ── Typography utilities ──────────────────────────────────────── */
+.font-mono { font-family: var(--font-plex-mono), 'Courier New', monospace; }
+.font-heading { font-family: var(--font-inter), sans-serif; }
+
+/* Tracked uppercase micro-label — section kickers, group labels, category
+   tags (the "METODOLOGÍA & SOFTWARE" look on editorial reference sites). */
+.eyebrow {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ── Utility classes (theme-aware) ─────────────────────────────── */
+@layer utilities {
+  /* Glow effects removed — kept as no-ops so existing call sites don't break */
+  .glow-cyan    { }
+  .glow-magenta { }
+  .glow-green   { }
+  .box-glow-cyan    { }
+  .box-glow-magenta { }
+
+  /* Color shortcuts */
+  .text-cyan    { color: var(--cyan); }
+  .text-magenta { color: var(--magenta); }
+  .text-green   { color: var(--green); }
+  .text-red     { color: var(--red); }
+  .text-yellow  { color: var(--yellow); }
+  .text-dim     { color: var(--text-muted); }
+  .text-bright  { color: var(--text-bright); }
+
+  /* Surface shortcuts */
+  .bg-surface   { background-color: var(--surface-solid); }
+  .bg-surface-2 { background-color: var(--surface-2); }
+
+  /* Card styles */
+  .card-cyber {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  /* Interactive border */
+  .neon-border {
+    border: 1px solid var(--border);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .neon-border:hover {
+    border-color: var(--border-bright);
+  }
+}
+
+/* ── Table ─────────────────────────────────────────────────────── */
+.table-cyber { width: 100%; border-collapse: collapse; font-size: 12px; }
+.table-cyber th {
+  font-family: var(--font-inter), sans-serif;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-bright);
+  padding: 7px 10px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 10.5px;
+}
+.table-cyber td {
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.table-cyber tr:hover td { background-color: var(--surface-2); }
+
+/* ── Form elements ─────────────────────────────────────────────── */
+input, select, textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 6px 10px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--cyan) 18%, transparent);
+}
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+/* ── Buttons ───────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-cyan {
+  background: var(--cyan);
+  color: #FFFFFF;
+  border-color: var(--cyan);
+}
+.btn-cyan:hover {
+  background: color-mix(in srgb, var(--cyan) 85%, black);
+}
+.btn-magenta {
+  background: transparent;
+  color: var(--magenta);
+  border-color: var(--magenta);
+}
+.btn-magenta:hover {
+  background: color-mix(in srgb, var(--magenta) 12%, transparent);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+.btn-ghost:hover {
+  color: var(--text);
+  border-color: var(--border-bright);
+  background: var(--surface-2);
+}
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Badges ────────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.badge-cyan    { background: color-mix(in srgb, var(--cyan) 14%, var(--surface));    color: var(--cyan);    border: 1px solid color-mix(in srgb, var(--cyan) 30%, var(--border)); }
+.badge-magenta { background: color-mix(in srgb, var(--magenta) 14%, var(--surface)); color: var(--magenta); border: 1px solid color-mix(in srgb, var(--magenta) 30%, var(--border)); }
+.badge-green   { background: color-mix(in srgb, var(--green) 14%, var(--surface));  color: var(--green);   border: 1px solid color-mix(in srgb, var(--green) 30%, var(--border)); }
+.badge-red     { background: color-mix(in srgb, var(--red) 14%, var(--surface));    color: var(--red);     border: 1px solid color-mix(in srgb, var(--red) 30%, var(--border)); }
+.badge-yellow  { background: color-mix(in srgb, var(--yellow) 14%, var(--surface)); color: var(--yellow);  border: 1px solid color-mix(in srgb, var(--yellow) 30%, var(--border)); }
+.badge-dim     { background: var(--surface-2); color: var(--dim); border: 1px solid var(--border); }
+
+/* ── Spinner animation (reused by sidebar) ─────────────────────── */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fractalCorePulse {
+  0%, 100% { r: 12.6; opacity: 0.85; }
+  50%      { r: 16.1; opacity: 1; }
+}

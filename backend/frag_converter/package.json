@@ -1,0 +1,13 @@
+{
+  "name": "ifc-hub-v2-frag-converter",
+  "private": true,
+  "type": "module",
+  "description": "Conversion IFC -> Fragments (.frag) invoked as a Node subprocess from FastAPI. Validated in SPIKE_VISOR (2026-09-16/17) against the real 21-file, 401MB ADIF federation.",
+  "scripts": {
+    "convert": "node convert_one.mjs"
+  },
+  "dependencies": {
+    "@thatopen/fragments": "^3.4.7",
+    "web-ifc": "^0.0.78"
+  }
+}

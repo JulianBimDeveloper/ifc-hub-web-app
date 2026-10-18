@@ -1,0 +1,1402 @@
+{
+  "PropertySetTemplates": [
+    {
+      "Name": "Summary",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcProject",
+      "PropertyTemplates": [
+        {
+          "Name": "Title",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Subject",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Author",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Keywords",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Comments",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "HyperlinkBase",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "Properties",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "Convergence",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "DescriptionFormat",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Easting",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Elevation",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ElevationOverride",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "FullDescription",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "FullDescriptionOverride",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "GridEasting",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "GridNorthing",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "IsCheckedOut",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsLabelDragged",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsLabelPinned",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsLabelVisible",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsLocked",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsMovable",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsProjectPoint",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsSurveyPoint",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "LabelRotation",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Latitude",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Longitude",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "MarkerRotation",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Northing",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "PointName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "PointNumber",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "RawDescription",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "RawDescriptionOverride",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Scale",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ScaleXY",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ScaleZ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ShowToolTip",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "CloneMeForDragging",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "ForceAnnoAllVisible",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "HasSaveVersionOverride",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsCancelling",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsErased",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsEraseStatusToggled",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsModified",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsModifiedGraphics",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsModifiedXData",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsNewObject",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsNotifyEnabled",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsNotifying",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsObjectIdsInFlux",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsPersistent",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsReadEnabled",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsReallyClosing",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsTransactionResident",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsUndoing",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsWriteEnabled",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "Bounds",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "AutoDelete",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsDisposed",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "AutomaticRimSurfaceAdjustment",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "BarrelPipeClearance",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "CatchmentsArea",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "CatchmentsRunoffCoefficient",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "CatchmentsTimeOfConcentration",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ConeHeight",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ConnectedPipesCount",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "Cover",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "DiameterOrWidth",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "EnergyGradeLine",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "FloorThickness",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Frame",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "FrameDiameter",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "FrameHeight",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Grate",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Height",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "HydraulicGradeLine",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "InnerDiameterOrWidth",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "InnerLength",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "KnownCapacity",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Length",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "PipeLowestBottomDepth",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "PipeUpperTopDepth",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "RimElevation",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "RimToSumpHeight",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Rotation",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "SumpDepth",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "SumpElevation",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "SurfaceAdjustmentValue",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "VerticalPipeClearance",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ConnectedPartCount",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "KnownFlow",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Material",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Name",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "NetworkName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "OverrideRuleSet",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "PartDescription",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "PartFamilyName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "PartSizeName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "PartSubType",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "RefAlignmentName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "RefSurfaceName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "RuleSetStyleName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "WallThickness",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Description",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "DisplayName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "FingerPrint",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "IsCWSReferenceObject",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsCWSSourceObject",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsReadOnlyReferenceObject",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsReferenceObject",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsReferenceStale",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsReferenceSubObject",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsReferenceValid",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsUsed",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "StyleName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "AverageLoss",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Bearing",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "CoverOfEndpoint",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "CoverOfStartPoint",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "EnergyGradeLineDown",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "EnergyGradeLineUp",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "EntryLoss",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ExitLoss",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "FlowRate",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "HasManningCoefficient",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "HydraulicGradeLineDown",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "HydraulicGradeLineUp",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "InnerHeight",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "JunctionLoss",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Length2D",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Length2DCenterToCenter",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Length2DToInsideEdge",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Length3D",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Length3DCenterToCenter",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Length3DToInsideEdge",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "MaximumCover",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "MinimumCover",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "OuterDiameterOrWidth",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "OuterHeight",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "Radius",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ReturnPeriod",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "Slope",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        }
+      ]
+    },
+    {
+      "Name": "Misc",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "BlockName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ClassID",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "HasFields",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsAProxy",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        }
+      ]
+    },
+    {
+      "Name": "3D Visualization",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "CastShadows",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "Material",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ReceiveShadows",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        }
+      ]
+    },
+    {
+      "Name": "General",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ColorIndex",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "Layer",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Linetype",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "LinetypeScale",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "PlotStyleName",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Visible",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "LayerKey",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "Geometry",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "IsPlanar",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "Closed",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "IsPeriodic",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        }
+      ]
+    },
+    {
+      "Name": "Part Data",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "Grosor de pared",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Grosor de suelo",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Altura de estructura ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Anchura de estructura ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Altura de cerco a sumidero",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Altura de cañón",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Longitud de estructura interior",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Anchura de estructura interior",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Altura de marco",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Diámetro de marco",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Longitud de marco",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Anchura de marco",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Separación de tubería vertical",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Separación acometida superior",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Altura de cono",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Grosor de losa",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Material",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Forma de estructura",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Marco",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Rejilla",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Tapa",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Altura de tubería interior",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Anchura de tubería interior",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Radio de curva mínimo",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLengthMeasure"
+        },
+        {
+          "Name": "Coeficiente de Manning",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Coeficiente de Hazen Williams",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Factor de Darcy Weisbach",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "Forma de sección transversal",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "Miscellaneous",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "IsHighlighting",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "NeedsPromoting",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "SupportsBaseCurveCommands",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "SupportsProfileCommands",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "SwappingReferences",
+          "Description": "",
+          "PrimaryMeasureType": "IfcBoolean"
+        },
+        {
+          "Name": "TypeIcon",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "IfcObject Properties",
+      "Description": "IfcObject Properties",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "IFC::GlobalId",
+          "Description": "",
+          "PrimaryMeasureType": ""
+        },
+        {
+          "Name": "IFC::IfcExportAs",
+          "Description": "",
+          "PrimaryMeasureType": ""
+        }
+      ]
+    },
+    {
+      "Name": "Source IFC File",
+      "Description": "Ifc File Properties",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "IFC::File Name",
+          "Description": "",
+          "PrimaryMeasureType": ""
+        },
+        {
+          "Name": "IFC::File Path",
+          "Description": "",
+          "PrimaryMeasureType": ""
+        },
+        {
+          "Name": "IFC::Creation Date",
+          "Description": "",
+          "PrimaryMeasureType": ""
+        },
+        {
+          "Name": "IFC::Originating System",
+          "Description": "",
+          "PrimaryMeasureType": ""
+        },
+        {
+          "Name": "IFC::Import Date Event",
+          "Description": "",
+          "PrimaryMeasureType": ""
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_00_Generales ",
+      "Description": "Propiedades generales del proyecto",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcProject",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_00_Codigo_Archivo ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_00_Generales",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_00_Descripcion_Producto",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_00_Codigo_Producto",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_00_Disciplina",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_00_Subdisciplina",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_00_Id_Objeto",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_02_Localizacion ",
+      "Description": "Datos de ubicacion y actuacion",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcProject",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_02_Codigo_Actuacion ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_02_Direccion_Ubicacion ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_02_Entorno_Actuacion ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_02_Expediente_Actuacion ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_02_Nombre_Actuacion ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_02_Nombre_Global ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_02_Sistema_Coordenadas ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_02_Localizacion",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_02_Km_Fin",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        },
+        {
+          "Name": "ADIF_02_Zonificacion",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_02_Km_Inicio",
+          "Description": "",
+          "PrimaryMeasureType": "IfcReal"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_03_Coordinacion3D",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_03_Fuente_Definicion",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_03_Codigo_Reubicacion",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_03_Codigo_Estudio",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_03_Fuente_Comentario",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_03_Descripcion_Estado",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_03_Visibilidad_Temporal",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_03_Codigo_Estado",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_04_4D ",
+      "Description": "Fechas y fases de actuacion",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcProject",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_04_Inicio_Actuacion ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_04_Fin_Actuacion ",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_04_4D",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_04_Fase",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_04_Inicio_Actividad",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "ADIF_04_Fin_Actividad",
+          "Description": "",
+          "PrimaryMeasureType": "IfcInteger"
+        },
+        {
+          "Name": "ADIF_04_Codigo_Actividad",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_05_5D",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_05_%Ejecucion",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Capitulo",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Codigo_Capitulo",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Codigo_EDT",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Codigo_Partida",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Codigo_SubCapitulo",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Medicion",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Partida",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Precio_Unitario",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_SubCapitulo",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_05_Unidad",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_06_6D",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_06_Codigo_Especificacion",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_07_7D",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_07_Certificado",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_07_Ejecutado",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_07_Fecha_Ejecucion",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_07_Verificado",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    },
+    {
+      "Name": "ADIF_08_DocVinculada",
+      "Description": "",
+      "TemplateType": "NOTDEFINED",
+      "ApplicableEntities": "IfcElement,IfcSpace",
+      "PropertyTemplates": [
+        {
+          "Name": "ADIF_08_Doc2",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        },
+        {
+          "Name": "ADIF_08_Doc1",
+          "Description": "",
+          "PrimaryMeasureType": "IfcLabel"
+        }
+      ]
+    }
+  ]
+}
